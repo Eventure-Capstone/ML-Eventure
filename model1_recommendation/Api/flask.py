@@ -14,11 +14,11 @@ CORS(app)
 # Configure logging
 logging.basicConfig(level=logging.DEBUG)
 
-model_path = '../models/models_category_location_user.h5'
+model_path = '../models/models_lat_long_city.h5'
 model = tf.keras.models.load_model(model_path)
 logging.info(f"Model loaded from {model_path}")
 
-data_path = '../models/setelah_cleaning.csv'
+data_path = '../models/user-lat-long.csv'
 data = pd.read_csv(data_path)
 logging.info(f"Data loaded from {data_path}")
 

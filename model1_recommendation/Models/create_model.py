@@ -49,5 +49,6 @@ def train_model():
 if __name__ == '__main__':
     model = train_model()
     model.save('models_lat_long_city.h5')
-    joblib.dump(tfidf_vectorizer, 'tfidf_vectorizer.pkl')
-    joblib.dump(location_encoder, 'onehot_encoder.pkl')
+
+    
+    
